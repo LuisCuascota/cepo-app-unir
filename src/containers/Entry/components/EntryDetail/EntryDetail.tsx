@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { useEntryDetailState } from "./state/useEntryDetailState";
+import { useEntryDetailState } from "../../../../customHooks/Entry/useEntryDetailState";
 import { EntryItem } from "../EntryItem/EntryItem";
 import { EntryOption } from "../../../../store/interfaces/Entry/entry.interfaces";
 import { LoanModal } from "../../../../components/modals/Loan/LoanModal";

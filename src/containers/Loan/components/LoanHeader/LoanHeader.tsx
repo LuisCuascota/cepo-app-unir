@@ -9,8 +9,8 @@ import {
 import { LoanTypeEnum } from "../../../../shared/enums/loanType.enum";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SaveIcon from "@mui/icons-material/Save";
-import { useLoanHeaderState } from "./state/useLoanHeaderState";
-import { LoanHeaderProps } from "./LoanHeader.interfaces";
+import { useLoanHeaderState } from "../../../../customHooks/Loan/useLoanHeaderState";
+import { LoanHeaderProps } from "../../../../customHooks/Loan/LoanHeader.interfaces";
 import { PersonSearch } from "../../../../components/search/personSearch/PersonSearch";
 import { DatePikerInput } from "../../../../components/input/datePikerInput/DatePikerInput";
 

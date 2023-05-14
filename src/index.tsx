@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
-import App from "./App";
+import Router from "./router/Router";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { NavigationBar } from "./components/navigation/NavigationBar";
@@ -16,7 +16,7 @@ root.render(
     <BrowserRouter>
       <NavigationBar />
       <Box>
-        <App />
+        <Router />
       </Box>
     </BrowserRouter>
   </Provider>

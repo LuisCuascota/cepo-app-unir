@@ -1,6 +1,6 @@
 import { Container, Paper } from "@mui/material";
 import { LoanHeader } from "./components/LoanHeader/LoanHeader";
-import { useLoanState } from "./state/useLoanState";
+import { useLoanState } from "../../customHooks/Loan/useLoanState";
 import { LoanTable } from "../../components/loan/loanTable/LoanTable";
 
 export const LoanContainer = () => {

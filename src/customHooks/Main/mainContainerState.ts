@@ -1,6 +1,6 @@
-import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { deleteEntry } from "../../../store/thunks/Entry/entry.thunks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { useState } from "react";
+import { deleteEntry } from "../../store/actions/Entry/entry.actions";
 
 export const mainContainerState = () => {
   const dispatch = useAppDispatch();
@@ -19,6 +19,8 @@ export const mainContainerState = () => {
   const onOpenModal = () => {
     setOpenModal(true);
   };
+
+  console.log(newEntries);
 
   return {
     entries: newEntries,

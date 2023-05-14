@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from "react";
-import { LoanTypeEnum } from "../../../../../shared/enums/loanType.enum";
-import { SimulatorHeaderProps } from "../SimulatorHeader.interfaces";
+import { LoanTypeEnum } from "../../shared/enums/loanType.enum";
+import { SimulatorHeaderProps } from "./SimulatorHeader.interfaces";
 
 export const useSimulatorHeaderState = (props: SimulatorHeaderProps) => {
   const [months, setMonths] = useState<number>(0);

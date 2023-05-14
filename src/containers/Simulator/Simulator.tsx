@@ -1,6 +1,6 @@
 import { Container, Paper } from "@mui/material";
 import { SimulatorHeader } from "./components/SimulatorHeader/SimulatorHeader";
-import { useSimulatorState } from "./state/useSimulatorState";
+import { useSimulatorState } from "../../customHooks/Simulator/useSimulatorState";
 import { LoanTable } from "../../components/loan/loanTable/LoanTable";
 
 export const SimulatorContainer = () => {

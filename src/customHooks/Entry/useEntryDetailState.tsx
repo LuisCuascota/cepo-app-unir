@@ -1,12 +1,12 @@
 import { ChangeEvent, useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../../../../store/hooks";
-import { FetchStateEnum } from "../../../../../shared/enums/fetchState.enum";
-import { EntryOption } from "../../../../../store/interfaces/Entry/entry.interfaces";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { FetchStateEnum } from "../../shared/enums/fetchState.enum";
+import { EntryOption } from "../../store/interfaces/Entry/entry.interfaces";
 import {
   setDisableSave,
   setOptionsValue,
-} from "../../../../../store/actions/Entry/entry.actions";
-import { EntryTypeEnum } from "../../../../../shared/enums/entryType.enum";
+} from "../../store/actions/Entry/entry.actions";
+import { EntryTypeEnum } from "../../shared/enums/entryType.enum";
 import { UseEntryDetailStateInterfaces } from "./useEntryDetailState.interfaces";
 
 export const useEntryDetailState = (): UseEntryDetailStateInterfaces => {
@@ -45,17 +45,10 @@ export const useEntryDetailState = (): UseEntryDetailStateInterfaces => {
     setOpenLoanModal(false);
   };
 
-  const validateEnableSave = () => {
-    const filteredOptions = options.filter((option) => option.showDetails);
-
-    if (options.length > 0 && filteredOptions.length == 0)
-      dispatch(setDisableSave(false));
-  };
-
   useEffect(() => {
     if (getOptionsStatus === FetchStateEnum.SUCCESS) {
       setEntryOptions(options);
-      validateEnableSave();
+      dispatch(setDisableSave(false));
     }
   }, [options]);
 

@@ -10,7 +10,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import { mainContainerState } from "./state/mainContainerState";
+import { mainContainerState } from "../../customHooks/Main/mainContainerState";
 import { NewEntryComplete } from "../../store/interfaces/Entry/entry.interfaces";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { Visibility } from "@mui/icons-material";
@@ -77,7 +77,7 @@ export const MainContainer = () => {
                     <IconButton
                       aria-label="delete"
                       color={"error"}
-                      onClick={() => onDeleteEntry(entry.header.number)}
+                      onClick={() => onDeleteEntry(index)}
                     >
                       <DeleteIcon />
                     </IconButton>

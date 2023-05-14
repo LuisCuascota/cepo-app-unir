@@ -1,18 +1,18 @@
-import { useAppDispatch, useAppSelector } from "../../../../store/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { useEffect, useState } from "react";
-import { getLoanByAccount } from "../../../../store/thunks/Loan/loan.thunks";
-import { FetchStateEnum } from "../../../../shared/enums/fetchState.enum";
+import { getLoanByAccount } from "../../store/thunks/Loan/loan.thunks";
+import { FetchStateEnum } from "../../shared/enums/fetchState.enum";
 import {
   FeeLoanToPay,
   LoanDetail,
   LoanResponse,
-} from "../../../../store/interfaces/Loan/loan.interfaces";
-import { EntryTypeEnum } from "../../../../shared/enums/entryType.enum";
+} from "../../store/interfaces/Loan/loan.interfaces";
+import { EntryTypeEnum } from "../../shared/enums/entryType.enum";
 import {
   setDisableSave,
   setOptionsValue,
-} from "../../../../store/actions/Entry/entry.actions";
-import { setFeeLoanToPay } from "../../../../store/actions/Loan/loan.actions";
+} from "../../store/actions/Entry/entry.actions";
+import { setFeeLoanToPay } from "../../store/actions/Loan/loan.actions";
 import {
   LoanModalProps,
   useLoanModalStateProps,

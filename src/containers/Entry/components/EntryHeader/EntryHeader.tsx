@@ -6,7 +6,7 @@ import {
   RadioGroup,
   Typography,
 } from "@mui/material";
-import { useEntryHeaderState } from "./state/useEntryHeaderState";
+import { useEntryHeaderState } from "../../../../customHooks/Entry/useEntryHeaderState";
 import { EntryHeaderStyles } from "./EntryHeader.styles";
 import { PaymentMethodEnum } from "../../../../shared/enums/paymentMethod.enum";
 import { PersonSearch } from "../../../../components/search/personSearch/PersonSearch";

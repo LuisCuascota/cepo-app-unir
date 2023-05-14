@@ -7,8 +7,8 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { useLoanModalState } from "./state/useLoanModalState";
-import { LoanModalProps } from "./state/useLoanModalState.interfaces";
+import { useLoanModalState } from "../../../customHooks/Loan/useLoanModalState";
+import { LoanModalProps } from "../../../customHooks/Loan/useLoanModalState.interfaces";
 import { LoanTable } from "../../loan/loanTable/LoanTable";
 import { getFormattedDate } from "../../../shared/utils/date.utils";
 

@@ -71,6 +71,10 @@ export const entrySlice = createSlice({
   initialState,
   name: "entry",
   reducers: {
+    deleteEntry(state, action: { payload: number }) {
+      console.log(action.payload);
+      state.newEntries.splice(action.payload, 1);
+    },
     setDisableSave(state, action: { payload: boolean }) {
       state.disableSave = action.payload;
     },

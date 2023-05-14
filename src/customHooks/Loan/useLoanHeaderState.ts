@@ -1,12 +1,12 @@
 import { ChangeEvent, useEffect, useState } from "react";
-import { LoanTypeEnum } from "../../../../../shared/enums/loanType.enum";
-import { LoanHeaderProps } from "../LoanHeader.interfaces";
-import { getPersonList } from "../../../../../store/thunks/Person/person.thunks";
-import { useAppDispatch, useAppSelector } from "../../../../../store/hooks";
-import { createLoanFees } from "../../../../../shared/utils/loan.utils";
-import { getFormattedDate } from "../../../../../shared/utils/date.utils";
-import { FetchStateEnum } from "../../../../../shared/enums/fetchState.enum";
-import { getLoanCount } from "../../../../../store/thunks/Loan/loan.thunks";
+import { LoanTypeEnum } from "../../shared/enums/loanType.enum";
+import { LoanHeaderProps } from "./LoanHeader.interfaces";
+import { getPersonList } from "../../store/thunks/Person/person.thunks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { createLoanFees } from "../../shared/utils/loan.utils";
+import { getFormattedDate } from "../../shared/utils/date.utils";
+import { FetchStateEnum } from "../../shared/enums/fetchState.enum";
+import { getLoanCount } from "../../store/thunks/Loan/loan.thunks";
 
 export const useLoanHeaderState = (props: LoanHeaderProps) => {
   const dispatch = useAppDispatch();

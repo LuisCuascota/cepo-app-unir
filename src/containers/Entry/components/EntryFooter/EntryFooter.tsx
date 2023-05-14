@@ -6,7 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import { EntryFooterStyles } from "./EntryFooter.styles";
-import { useEntryFooterState } from "./state/useEntryFooterState";
+import { useEntryFooterState } from "../../../../customHooks/Entry/useEntryFooterState";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SaveIcon from "@mui/icons-material/Save";
 import { DatePikerInput } from "../../../../components/input/datePikerInput/DatePikerInput";

@@ -1,19 +1,19 @@
-import { useAppDispatch, useAppSelector } from "../../../../../store/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { ChangeEvent, useEffect, useState } from "react";
-import { FetchStateEnum } from "../../../../../shared/enums/fetchState.enum";
-import { getPersonList } from "../../../../../store/thunks/Person/person.thunks";
+import { FetchStateEnum } from "../../shared/enums/fetchState.enum";
+import { getPersonList } from "../../store/thunks/Person/person.thunks";
 import {
   getEntryCount,
   getEntryOptionList,
-} from "../../../../../store/thunks/Entry/entry.thunks";
+} from "../../store/thunks/Entry/entry.thunks";
 import { HeaderState } from "./useEntryHeaderState.interfaces";
 import {
   setDisableSearch,
   setNewEntryAccount,
   setNewEntryIsTransfer,
   setNewEntryNumber,
-} from "../../../../../store/actions/Entry/entry.actions";
-import { PaymentMethodEnum } from "../../../../../shared/enums/paymentMethod.enum";
+} from "../../store/actions/Entry/entry.actions";
+import { PaymentMethodEnum } from "../../shared/enums/paymentMethod.enum";
 
 export const useEntryHeaderState = (): HeaderState => {
   const dispatch = useAppDispatch();

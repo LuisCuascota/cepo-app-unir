@@ -1,10 +1,7 @@
 import { useState } from "react";
-import {
-  Loan,
-  LoanDetail,
-} from "../../../store/interfaces/Loan/loan.interfaces";
-import { useAppDispatch } from "../../../store/hooks";
-import { postNewLoan } from "../../../store/thunks/Loan/loan.thunks";
+import { Loan, LoanDetail } from "../../store/interfaces/Loan/loan.interfaces";
+import { useAppDispatch } from "../../store/hooks";
+import { postNewLoan } from "../../store/thunks/Loan/loan.thunks";
 
 export const useLoanState = () => {
   const dispatch = useAppDispatch();

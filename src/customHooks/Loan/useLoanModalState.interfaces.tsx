@@ -1,7 +1,7 @@
 import {
   LoanDetail,
   LoanResponse,
-} from "../../../../store/interfaces/Loan/loan.interfaces";
+} from "../../store/interfaces/Loan/loan.interfaces";
 
 export interface useLoanModalStateProps {
   loan: LoanResponse | undefined;

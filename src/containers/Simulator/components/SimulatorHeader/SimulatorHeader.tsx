@@ -9,8 +9,8 @@ import {
 import { LoanTypeEnum } from "../../../../shared/enums/loanType.enum";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SaveIcon from "@mui/icons-material/Save";
-import { useSimulatorHeaderState } from "./state/useSimulatorHeaderState";
-import { SimulatorHeaderProps } from "./SimulatorHeader.interfaces";
+import { useSimulatorHeaderState } from "../../../../customHooks/Simulator/useSimulatorHeaderState";
+import { SimulatorHeaderProps } from "../../../../customHooks/Simulator/SimulatorHeader.interfaces";
 
 export const SimulatorHeader = (props: SimulatorHeaderProps) => {
   const { onChangeMonths, onChangeLoanType, onChangeValue, onSimulate } =

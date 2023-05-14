@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { LoanDetail } from "../../../store/interfaces/Loan/loan.interfaces";
+import { LoanDetail } from "../../store/interfaces/Loan/loan.interfaces";
 import {
   createLoanFees,
   CreateLoanFeesParams,
-} from "../../../shared/utils/loan.utils";
+} from "../../shared/utils/loan.utils";
 
 export const useSimulatorState = () => {
   const [loanFees, setLoanFees] = useState<LoanDetail[]>([]);

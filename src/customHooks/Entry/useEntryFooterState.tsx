@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../../../../store/hooks";
-import { NewEntryDetail } from "../../../../../store/interfaces/Entry/entry.interfaces";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { NewEntryDetail } from "../../store/interfaces/Entry/entry.interfaces";
 import {
   setDisableSave,
   setNewEntryAmount,
   setNewEntryDate,
   setOptionsValue,
-} from "../../../../../store/actions/Entry/entry.actions";
+} from "../../store/actions/Entry/entry.actions";
 import {
   getEntryCount,
   postNewEntry,
-} from "../../../../../store/thunks/Entry/entry.thunks";
-import { FetchStateEnum } from "../../../../../shared/enums/fetchState.enum";
-import { LoanToPay } from "../../../../../store/interfaces/Loan/loan.interfaces";
+} from "../../store/thunks/Entry/entry.thunks";
+import { FetchStateEnum } from "../../shared/enums/fetchState.enum";
+import { LoanToPay } from "../../store/interfaces/Loan/loan.interfaces";
 import { UseEntryFooterState } from "./useEntryFooterState.interfaces";
 
 export const useEntryFooterState = (): UseEntryFooterState => {
@@ -90,7 +90,6 @@ export const useEntryFooterState = (): UseEntryFooterState => {
   }, [options]);
 
   useEffect(() => {
-    console.log(postNewEntryStatus);
     if (postNewEntryStatus === FetchStateEnum.SUCCESS) {
       dispatch(getEntryCount());
       dispatch(setOptionsValue([]));

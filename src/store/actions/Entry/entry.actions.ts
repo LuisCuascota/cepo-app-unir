@@ -1,6 +1,7 @@
 import { entrySlice } from "../../slices/Entry/entry.slice";
 
 export const {
+  deleteEntry,
   setNewEntryAccount,
   setNewEntryAmount,
   setNewEntryDate,

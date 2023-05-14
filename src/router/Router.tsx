@@ -1,12 +1,12 @@
 import React from "react";
-import { EntryContainer } from "./containers/Entry/Entry";
+import { EntryContainer } from "../containers/Entry/Entry";
 import { Route, Routes } from "react-router-dom";
-import { RoutesEnum } from "./shared/enums/routes.enum";
-import { SimulatorContainer } from "./containers/Simulator/Simulator";
-import { LoanContainer } from "./containers/Loan/Loan";
-import { MainContainer } from "./containers/Main/Main";
+import { RoutesEnum } from "../shared/enums/routes.enum";
+import { SimulatorContainer } from "../containers/Simulator/Simulator";
+import { LoanContainer } from "../containers/Loan/Loan";
+import { MainContainer } from "../containers/Main/Main";
 
-function App() {
+function Router() {
   return (
     <Routes>
       <Route path={RoutesEnum.INDEX} element={<MainContainer />} />
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Router;
